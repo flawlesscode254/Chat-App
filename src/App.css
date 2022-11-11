@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3px;
+  background-color: rgb(31, 30, 30);
+  flex-direction: row;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.links{
+  text-decoration: none;
+  color: white;
+}
