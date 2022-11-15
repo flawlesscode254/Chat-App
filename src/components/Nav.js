@@ -11,7 +11,7 @@ import Logout from "@mui/icons-material/Logout";
 
 import db, { auth } from "../Firebase";
 
-function Nav() {
+function Nav({ show, setShow }) {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const open = Boolean(anchorEl);
@@ -29,8 +29,24 @@ function Nav() {
           color: "white",
         }}
       >
-        Chat Forum
+        Chat Forums
       </p>
+      <h3
+        onClick={setShow(!show)}
+        style={{
+          color: "green",
+        }}
+      >
+        Forums
+      </h3>
+      <h3
+        onClick={setShow(show)}
+        style={{
+          color: "pink",
+        }}
+      >
+        Contact US
+      </h3>
       <React.Fragment>
         <Box
           sx={{

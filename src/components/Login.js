@@ -29,7 +29,7 @@ function Nav() {
           color: "white",
         }}
       >
-        Chat Forum
+        Chat Forums
       </p>
       <React.Fragment>
         <Box
